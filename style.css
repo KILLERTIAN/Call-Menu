@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontainer {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    /* top: 50%;
+    left: 50%; */
+    width: 295px;
+    height: 580px;
+    /* background: rgb(134, 239, 139); */
+}
+
+.maincontainer .phoneborder {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 8px solid #333;
+    outline: 2px solid silver;
+    border-radius: 41px;
+}
+
+.display {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.number_display {
+    width: 100%;
+    height: 20vh;
+    background: #94f;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+
+}
+
+.number_buttons {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: rgb(63, 204, 247);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.number_buttons>div {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.number_buttons span {
+    display: flex;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.number_buttons span h5 {
+    font-size: 0.3em;
+    font-weight: 800;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background: rgb(255, 76, 76);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
