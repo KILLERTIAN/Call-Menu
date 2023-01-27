@@ -14,10 +14,13 @@
         <div class="phoneborder">
             <div class="display">
                 <section1 class="number_display">
-                    <h2 id="value"></h2>
+                    <div class="number_display_box">
+                        <h2 id="value"></h2>
+                    </div>
+
                 </section1>
                 <section2 class="number_buttons">
-                    <div>
+                    <!-- <div>
                         <span>1</span>
                         <span>2<h5>A B C</h5></span>
                         <span>3<h5>D E F</h5></span>
@@ -39,6 +42,29 @@
                     </div>
                     <div class="call">
                         <span>Call</span>
+                    </div> -->
+                    <div>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                    </div>
+                    <div>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                    </div>
+                    <div>
+                        <span>*</span>
+                        <span>0</span>
+                        <span>#</span>
+                    </div>
+                    <div class="call">
+                        <span>Call</span>
                     </div>
 
 
@@ -49,6 +75,18 @@
             </div>
         </div>
     </div>
+    <script>
+        let buttons = document.querySelector('.number_display');
+        let btn = document.querySelectorAll('span');
+        let value = document.getElementById('value');
+
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].addEventListener("click", function () {
+                value.innerHTML += this.innerHTML;
+            })
+
+        }
+    </script>
 
 </body>
 

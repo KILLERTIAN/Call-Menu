@@ -52,19 +52,42 @@ body {
 
 .number_display {
     width: 100%;
-    height: 20vh;
-    background: #94f;
+    height: 30vh;
+    /* background: #94f; */
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
 
+.number_display_box {
+    position: relative;
+    display: flex;
+    top: 40px;
+    width: 90%;
+    height: 30%;
+    /* background: #444; */
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.number_display .number_display_box .number_display h2 {
+    display: flex;
+    flex-direction: row;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .number_buttons {
     display: grid;
     position: relative;
     width: 100%;
-    height: 70vh;
-    background: rgb(63, 204, 247);
+    height: 60vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -84,10 +107,10 @@ body {
 .number_buttons span {
     display: flex;
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    background: #fff;
+    background: rgb(217, 217, 217);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -96,11 +119,13 @@ body {
     margin-top: 0;
     font-size: 1.5em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .number_buttons span h5 {
     font-size: 0.3em;
     font-weight: 800;
+    display: none;
 }
 
 .footer {
