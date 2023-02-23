@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 700px;
 }
 
 .maincontainer {
@@ -110,7 +111,7 @@ body {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: rgb(217, 217, 217);
+    background: #e0e0e0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -128,10 +129,33 @@ body {
     display: none;
 }
 
+.call img {
+    width: 55px;
+    height: 55px;
+}
+
 .footer {
     width: 100%;
     height: 10vh;
-    background: rgb(255, 76, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* justify-content: center; */
+    /* background: rgb(255, 76, 76); */
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
+}
+
+.footer .favrouites,
+.recents,
+.contacts,
+.keypad,
+.voicemail {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
