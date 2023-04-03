@@ -8,7 +8,7 @@ Preview :-
 ![image](https://user-images.githubusercontent.com/77867638/223782992-d766922a-ea24-47fb-a928-c64e8c3911bf.png)
 
 
-License:-
+# License 
 
 MIT License
 
